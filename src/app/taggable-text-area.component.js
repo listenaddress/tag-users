@@ -33,12 +33,12 @@ export default class TaggableTextArea {
     const textareaEl = element[0].getElementsByTagName('TEXTAREA')[0]
 
     // Handle user typing in textarea
-    element[0].addEventListener('input', function (textarea) {
+    textareaEl.addEventListener('input', function (textarea) {
       scope.handleChange(textarea.target.selectionStart)
     })
 
     // Handle user clicking on dropdown of matched users
-    element[0].getElementsByClassName('matches')[0].addEventListener('click', function (event) {
+    matchesEl.addEventListener('click', function (event) {
       scope.text = scope.text.substring(0, scope.taggingIndex) +
                   '@' + scope.username + ' ' +
                   scope.text.substring(scope.cursorPosition, scope.text.length)

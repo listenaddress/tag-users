@@ -1,7 +1,7 @@
 import angular from 'angular'
 import '../style/app.css'
 import UserSearch from './user-search.js'
-import TaggableTextArea from './taggable-text-area.component'
+import TaggableTextArea from './taggable-text-area.directive'
 
 let app = () => {
   return { template: require('./app.html') }

@@ -1,0 +1,57 @@
+/* styles in src/style directory are applied to the whole page */
+a {
+  color: #03A9F4;
+}
+
+textarea {
+  font-size: 14px;
+  width: 280px;
+  height: 80px;
+  padding: 10px;
+  border: none;
+  resize: none;
+}
+
+.textarea-container {
+  min-width: 300px;
+  min-height: 100px;
+  float: left;
+  border: 1px solid rgba(0,0,0,.05);
+  box-shadow: 0 1px 7px rgba(0,0,0,.05);
+}
+
+.matches {
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.matches div {
+  font-size: 13px;
+  padding: 6px 15px;
+  z-index: 100;
+}
+
+.matches div:hover {
+  background: rgba(0,0,0,.05);
+  cursor: pointer;
+}
+
+.matches img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.matches span {
+  position: relative;
+  bottom: 9px;
+}
+
+textarea:hover,
+textarea:active,
+textarea:focus {
+  outline:0px !important;
+  -webkit-appearance:none;
+}

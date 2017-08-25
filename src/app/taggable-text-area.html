@@ -1,0 +1,14 @@
+<textarea
+  ng-model="text"
+  ng-trim="false">
+</textarea>
+<div
+  class="matches"
+  ng-show="matches">
+  <div
+    ng-repeat="match in matches | limitTo: 5"
+    ng-click="handleClick(match.username)">
+    <img ng-src="{{match.avatar_url}}" />
+    <span>{{match.name}} - @{{match.username}}</span>
+  </div>
+</ul>
